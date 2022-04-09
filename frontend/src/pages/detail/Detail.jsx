@@ -7,6 +7,8 @@ import CastList from './CastList';
 
 import './detail.scss';
 import VideoList from './VideoList';
+import MovieList from '../../components/movie-list/MovieList';
+
 
 const Detail = (props) => {
 
@@ -59,6 +61,12 @@ useEffect(() => {
             <div className="container">
               <div className="section mb-3">
                 <VideoList id={item.id}/>
+              </div>
+              <div className="section mb-3">
+                <div className="section__header mb-2">
+                  <h2>Similaires</h2>
+                </div>
+                <MovieList category={category} type="similar" id={item.id}/>
               </div>
             </div>
           </React.Fragment>

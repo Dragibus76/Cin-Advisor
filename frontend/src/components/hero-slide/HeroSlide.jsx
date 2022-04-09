@@ -89,7 +89,7 @@ const HeroSlide = () => {
                      <div className="overview">{item.overview}</div>
                      <div className="btns">
                          <Button onClick={() => history.push('/movie/' + item.id)}>
-                            Regarder Maintenant
+                            Plus D'informations
                          </Button>
                          <OutlineButton onClick={setModalActive}>
                             Bande annonce

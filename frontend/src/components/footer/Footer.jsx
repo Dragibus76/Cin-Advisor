@@ -41,7 +41,13 @@ const Footer = () => {
           </div>
         
         </div>
+        
+        
       </div>
+      <div className="Copyright">
+        <p>CodeDragi - 2022</p>
+        <p>Version: 1.0</p>
+        </div>
     </div>
   )
 }

@@ -1,5 +1,10 @@
 @use "../../scss/" as *;
 
+.Copyright {
+    text-align: center;
+    margin-top: 5em;
+}
+
 .footer {
     position: relative;
     padding: 6rem 2rem;
@@ -36,5 +41,6 @@
                 margin-top: 1rem;
             }
         }
-    }
+        
+}
 }
