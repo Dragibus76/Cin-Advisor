@@ -3,10 +3,12 @@ import { useParams } from 'react-router-dom';
 
 import tmdbApi from '../../api/tmdbApi';
 import apiConfig from '../../api/apiConfig';
+import CastList from './CastList';
 
 import './detail.scss';
+import VideoList from './VideoList';
 
-const Detail = () => {
+const Detail = (props) => {
 
   const { category, id } = useParams();
 
@@ -50,8 +52,13 @@ useEffect(() => {
                   <div className="section__header">
                     <h2>Acteurs</h2>
                   </div>
-                  {/* Cast List */}
+                  <CastList id={item.id}/>
                 </div>
+              </div>
+            </div>
+            <div className="container">
+              <div className="section mb-3">
+                <VideoList id={item.id}/>
               </div>
             </div>
           </React.Fragment>

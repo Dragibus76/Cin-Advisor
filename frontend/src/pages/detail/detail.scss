@@ -96,8 +96,9 @@
 
     &__item {
         &__img {
-            padding-top: 160px;
-            background-size: cover;
+            padding-top: 138px;
+            background-size: contain;
+            background-repeat: no-repeat;
             margin-bottom: 0.5rem;
         }
 
